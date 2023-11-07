@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".data.add_task">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/add_title"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape3"
+                android:hint="Title"
+                android:inputType="textShortMessage"
+                android:paddingStart="16dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/add_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape3"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:id="@+id/dateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginRight="-30dp"
+                        android:layout_weight="1"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7" />
+
+                    <TimePicker
+                        android:id="@+id/timePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginRight="-30dp"
+                        android:layout_weight="1"
+                        android:calendarViewShown="false"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:timePickerMode="spinner" />
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/btnDate"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:text="Pick date" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/viewDate"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginBottom="20sp"-->
+<!--                        android:gravity="center" />-->
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/btnTime"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:text="Pick time" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/viewTime"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginBottom="20sp"-->
+<!--                        android:gravity="center" />-->
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:text="Schedule Task" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:text="Cancel" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

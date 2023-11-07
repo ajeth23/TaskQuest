@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/containerDataUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/update_Title"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape3"
+            android:hint="Title"
+            android:inputType="textShortMessage"
+            android:paddingStart="16dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/update_Message"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape3"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:paddingStart="16dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/dateTimeUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <DatePicker
+                android:id="@+id/updateDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginRight="-30dp"
+                android:layout_weight="1"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <TimePicker
+                android:id="@+id/updateTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginRight="-30dp"
+                android:layout_weight="1"
+                android:calendarViewShown="false"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:timePickerMode="spinner" />
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="Pick date"/>-->
+
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="Pick time"/>-->
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btn_cancel_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinalProject.Light" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <!--        <item name="windowActionBar">true</item>-->
+        <!--        <item name="windowNoTitle">true</item>-->
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!--        <item name="android:windowTranslucentStatus">false</item>-->
+        <!--        <item name="android:fitsSystemWindows">false</item>-->
+        <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    //if upi want custom
+
+    <style name="Theme.FinalProject" parent="Base.Theme.FinalProject.Light" />
+
+
+</resources>

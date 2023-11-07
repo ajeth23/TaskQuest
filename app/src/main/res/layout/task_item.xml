@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-20dp"
+            android:onClick="expandItem"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/task_list" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginRight="10dp"
+                android:hint="Title"
+                android:maxLength="15"
+                android:paddingStart="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/title_task"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:maxLength="15"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="100dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/yearText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Description"
+                    android:maxLength="30"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/message_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="none"
+                    android:maxLength="30"
+                    android:paddingStart="16dp"
+                    android:paddingTop="10dp"
+                    android:text="Description"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="100dp"
+                    android:background="#000000" />
+
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/numberText"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:layout_marginTop="25dp"-->
+                <!--                android:layout_marginRight="10dp"-->
+                <!--                android:hint="Date"-->
+                <!--                android:paddingStart="16dp" />-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/numberText1"-->
+                <!--                android:layout_width="100dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginLeft="15dp"-->
+                <!--                android:layout_marginTop="15dp"-->
+                <!--                android:layout_marginRight="10dp"-->
+                <!--                android:paddingStart="16dp"-->
+                <!--                android:text="Date"-->
+                <!--                android:textSize="18sp" />-->
+
+                <!--            <View-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:layout_marginLeft="30dp"-->
+                <!--                android:layout_marginRight="100dp"-->
+                <!--                android:background="#000000" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginRight="-30dp"
+                        android:layout_weight="1"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7" />
+
+                    <TimePicker
+                        android:id="@+id/timePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginRight="-30dp"
+                        android:layout_weight="1"
+                        android:calendarViewShown="false"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:timePickerMode="spinner" />
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="100dp"
+                            android:text="Edit Task"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <Button
+                            android:id="@+id/btnDelete"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginRight="100dp"
+                            android:text="Delete"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
+

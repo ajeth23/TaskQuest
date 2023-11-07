@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "968743179623",
+    "firebase_url": "https://finalproject-d318b-default-rtdb.firebaseio.com",
+    "project_id": "finalproject-d318b",
+    "storage_bucket": "finalproject-d318b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968743179623:android:17a41a4c407fc263610bc2",
+        "android_client_info": {
+          "package_name": "com.ecuacion.finalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW2TZF6W419zMEg7hXKZNzeKoqMJZDuOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
